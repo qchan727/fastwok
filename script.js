@@ -33,7 +33,7 @@ yearEl.textContent = currentYear;
             html += `<p>All served with <span class="red"><strong>White Rice.</strong></span><p>`;
             break;
          case "Seafood":
-            html += `<div><p>All served with <span class="red"><strong>White Rice.</strong></span></p><p>Additional <strong>$1.50</strong> charge for <span class="red"><strong>Scallops.</strong></span></p></div>`;
+            html += `<div><p>All served with <span class="red"><strong>White Rice.</strong></span></p><p>Additional <strong>$3.00</strong> charge for <span class="red"><strong>Scallops.</strong></span></p></div>`;
             break;
          case "Diet Specials":
             html += `<div><p>All steamed food!</p><p>All served with <span class="red"><strong>White Rice</strong></span> and sauce on the side.</p></div>`;
@@ -46,16 +46,31 @@ yearEl.textContent = currentYear;
             break;
       }
       html += `<div class="container-food">
-                  <table>`;
+               <table>`;
       if (section.multiplePrices) {
-         html += `<tr>
+         if (section.hasNumbers) {
+            html += `<tr>
+                     <th class="col-left">No.</th>
                      <th class="col-long">Name</th>
                      <th class="price-right">Price<br>(Small)</th>
                      <th class="price-right">Price<br>(Large)</th>
                   </tr>`;
+         } else {
+            html += `<tr>
+                  <th class="col-long">Name</th>
+                  <th class="price-right">Price<br>(Small)</th>
+                  <th class="price-right">Price<br>(Large)</th>
+               </tr>`;
+         }
+
          section.items.forEach((item) => {
             html += item.spicy ? `<tr class="red">` : `<tr>`;
-            html += `<td class="col-long">${item.name}`;
+            if (item.number) {
+               html += `<td class="col-left">${item.number}</td>`;
+               html += `<td class="col-long">${item.name}`;
+            } else {
+               html += `<td class="col-long">${item.name}`;
+            }
             if (item.description) {
                html += `<br> <span class="food-desc"> ${item.description}</span>`;
             }
@@ -66,15 +81,31 @@ yearEl.textContent = currentYear;
                            `;
          });
       } else {
-         html += `<tr>
+         if (section.hasNumbers) {
+            html += `<tr>
+                      <th class="col-left">No.</th>
                      <th class="col-long">Name</th>
                      <th></th>
                      <th class="price-right">Price</th>
                   </tr>
                   `;
+         } else {
+            html += `<tr>
+                     <th class="col-long">Name</th>
+                     <th></th>
+                     <th class="price-right">Price</th>
+                  </tr>
+                  `;
+         }
+
          section.items.forEach((item) => {
             html += item.spicy ? `<tr class="red">` : `<tr>`;
-            html += `<td class="col-long">${item.name}`;
+            if (item.number) {
+               html += `<td class="col-left">${item.number}</td>`;
+               html += `<td class="col-long">${item.name}`;
+            } else {
+               html += `<td class="col-long">${item.name}`;
+            }
             if (item.description) {
                html += `<br> <span class="food-desc"> ${item.description}</span>`;
             }

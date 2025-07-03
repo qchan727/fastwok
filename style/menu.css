@@ -105,6 +105,10 @@ table th {
    line-height: 1.4;
 }
 
+.col-left {
+   text-align: left;
+}
+
 .col-long {
    padding-right: 20rem;
 }
