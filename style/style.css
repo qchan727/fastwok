@@ -253,11 +253,12 @@ table th {
    padding-bottom: 1.6rem;
 }
 
-tr td:nth-child(2) {
+/* tr td:nth-child(1) {
    font-weight: 700;
-}
+} */
 
 .col-long {
+   font-weight: 700;
    padding-right: 6.4rem;
 }
 
