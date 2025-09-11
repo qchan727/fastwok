@@ -477,7 +477,7 @@
             "number": "62",
             "sectionName": "Chicken",
             "name": "Hunan Chicken",
-            "description": "Chunks of chicken with green pepper, mushrooms, broccoli, and water chestnuts in spicy sauce",
+            "description": "Chunks of chicken with green pepper, mushrooms, and broccoli in spicy sauce",
             "priceSmall": "$10.45",
             "priceLarge": 12.95,
             "spicy": true
@@ -503,7 +503,7 @@
             "number": "65",
             "sectionName": "Chicken",
             "name": "Moo Shu Chicken",
-            "description": "Chicken strips, cabbage, tree ear mushrooms, green onions, and eggs served with pancakes (L6) and a plum sauce",
+            "description": "Chicken strips, cabbage, tree ear mushrooms, green onions, and eggs served with pancakes (L6) and a plum sauce (no rice)",
             "priceSmall": "",
             "priceLarge": 14.25
          },
@@ -627,7 +627,7 @@
             "number": "79",
             "sectionName": "Pork",
             "name": "Moo Shu Pork",
-            "description": "Pork strips, cabbage, tree ear mushrooms, green onions, and eggs served with pancakes (L6) and in a plum sauce",
+            "description": "Pork strips, cabbage, tree ear mushrooms, green onions, and eggs served with pancakes (L6) and in a plum sauce (no rice)",
             "priceSmall": "",
             "priceLarge": 14.25
          },
@@ -745,7 +745,7 @@
             "number": "92",
             "sectionName": "Beef",
             "name": "Moo Shu Beef",
-            "description": "Sliced beef, cabbage, tree ear mushrooms, green onions, and egg served with pancakes (L6) and a plum sauce",
+            "description": "Sliced beef, cabbage, tree ear mushrooms, green onions, and egg served with pancakes (L6) and a plum sauce (no rice)",
             "priceSmall": "",
             "priceLarge": 15.25
          },
@@ -761,7 +761,7 @@
             "number": "94",
             "sectionName": "Beef",
             "name": "Kung Pao Beef",
-            "description": "Tender beef, celery, water chestnuts, celery, and peanuts in a spicy brown sauce",
+            "description": "Tender beef, celery, water chestnuts, and peanuts in a spicy brown sauce",
             "priceSmall": "$10.75",
             "priceLarge": 13.95,
             "spicy": true
@@ -865,7 +865,7 @@
             "number": "106",
             "sectionName": "Seafood",
             "name": "Moo Shu Shrimp or Scallops",
-            "description": "Shrimp or scallops, cabbage, tree ear mushrooms, and green onions served with pancakes (L6) and a plum sauce",
+            "description": "Shrimp or scallops, cabbage, tree ear mushrooms, and green onions served with pancakes (L6) and a plum sauce (no rice)",
             "price": "15.75"
          },
          {
@@ -972,7 +972,7 @@
             "number": "120",
             "sectionName": "Vegetable",
             "name": "Moo Shu Vegetables",
-            "description": "with 6 pancakes",
+            "description": "with 6 pancakes (no rice)",
             "price": 12.25
          },
          {
